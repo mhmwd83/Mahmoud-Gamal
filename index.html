@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Gamal El-sharkawy — Senior Hardware Engineer</title>
+    <meta name="description" content="Senior Hardware Engineer specializing in motor control, inverter design, PCB development, and power electronics. 7+ years experience delivering production-ready hardware at ELARABY Group.">
+    <meta name="keywords" content="hardware engineer, PCB design, motor control, inverter design, power electronics, Altium Designer, LTspice, MATLAB, embedded systems">
+    <meta name="author" content="Mahmoud Gamal El-sharkawy">
+    <!-- Google Analytics — replace GA_MEASUREMENT_ID with your ID (e.g. G-XXXXXXXXXX) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Mahmoud <span>El-sharkawy</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="assets/Mahmoud_Gamal_CV.pdf" download class="nav-link nav-cv-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download CV</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </button>
+        </div>
+    </nav>
+ 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <!-- PCB Trace Pattern SVG -->
+            <svg class="pcb-pattern" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <!-- Horizontal traces -->
+                <path d="M0 200 H300 L320 220 H500" stroke="rgba(96,165,250,0.15)" stroke-width="2"/>
+                <path d="M700 200 H900 L920 180 H1200" stroke="rgba(96,165,250,0.15)" stroke-width="2"/>
+                <path d="M0 400 H150 L170 420 H400 L420 400 H600" stroke="rgba(96,165,250,0.12)" stroke-width="2"/>
+                <path d="M800 400 H950 L970 380 H1200" stroke="rgba(96,165,250,0.12)" stroke-width="2"/>
+                <path d="M0 600 H250 L270 580 H450" stroke="rgba(96,165,250,0.13)" stroke-width="2"/>
+                <path d="M750 600 H1000 L1020 620 H1200" stroke="rgba(96,165,250,0.13)" stroke-width="2"/>
+                <!-- Vertical traces -->
+                <path d="M200 0 V150 L220 170 V300" stroke="rgba(96,165,250,0.12)" stroke-width="2"/>
+                <path d="M1000 0 V200 L980 220 V400" stroke="rgba(96,165,250,0.12)" stroke-width="2"/>
+                <path d="M100 500 V650 L120 670 V800" stroke="rgba(96,165,250,0.1)" stroke-width="2"/>
+                <path d="M1100 400 V550 L1080 570 V800" stroke="rgba(96,165,250,0.1)" stroke-width="2"/>
+                <!-- Vias (connection dots) -->
+                <circle cx="300" cy="200" r="5" fill="rgba(96,165,250,0.2)"/>
+                <circle cx="300" cy="200" r="2.5" fill="rgba(96,165,250,0.25)"/>
+                <circle cx="500" cy="220" r="5" fill="rgba(96,165,250,0.2)"/>
+                <circle cx="500" cy="220" r="2.5" fill="rgba(96,165,250,0.25)"/>
+                <circle cx="900" cy="200" r="5" fill="rgba(96,165,250,0.2)"/>
+                <circle cx="900" cy="200" r="2.5" fill="rgba(96,165,250,0.25)"/>
+                <circle cx="400" cy="400" r="5" fill="rgba(96,165,250,0.15)"/>
+                <circle cx="400" cy="400" r="2.5" fill="rgba(96,165,250,0.22)"/>
+                <circle cx="950" cy="400" r="5" fill="rgba(96,165,250,0.15)"/>
+                <circle cx="950" cy="400" r="2.5" fill="rgba(96,165,250,0.22)"/>
+                <circle cx="250" cy="600" r="5" fill="rgba(96,165,250,0.15)"/>
+                <circle cx="250" cy="600" r="2.5" fill="rgba(96,165,250,0.22)"/>
+                <circle cx="1000" cy="600" r="5" fill="rgba(96,165,250,0.15)"/>
+                <circle cx="1000" cy="600" r="2.5" fill="rgba(96,165,250,0.22)"/>
+                <circle cx="200" cy="150" r="5" fill="rgba(96,165,250,0.15)"/>
+                <circle cx="200" cy="150" r="2.5" fill="rgba(96,165,250,0.22)"/>
+                <circle cx="1000" cy="200" r="5" fill="rgba(96,165,250,0.15)"/>
+                <circle cx="1000" cy="200" r="2.5" fill="rgba(96,165,250,0.22)"/>
+                <!-- IC/Chip pads -->
+                <rect x="140" y="370" width="60" height="60" rx="4" stroke="rgba(96,165,250,0.13)" stroke-width="1.5" fill="none"/>
+                <rect x="152" y="382" width="36" height="36" rx="2" fill="rgba(96,165,250,0.08)"/>
+                <line x1="140" y1="385" x2="130" y2="385" stroke="rgba(96,165,250,0.13)" stroke-width="1.5"/>
+                <line x1="140" y1="395" x2="130" y2="395" stroke="rgba(96,165,250,0.13)" stroke-width="1.5"/>
+                <line x1="140" y1="405" x2="130" y2="405" stroke="rgba(96,165,250,0.13)" stroke-width="1.5"/>
+                <line x1="200" y1="385" x2="210" y2="385" stroke="rgba(96,165,250,0.13)" stroke-width="1.5"/>
+                <line x1="200" y1="395" x2="210" y2="395" stroke="rgba(96,165,250,0.13)" stroke-width="1.5"/>
+                <line x1="200" y1="405" x2="210" y2="405" stroke="rgba(96,165,250,0.13)" stroke-width="1.5"/>
+                <rect x="920" y="550" width="50" height="50" rx="4" stroke="rgba(96,165,250,0.12)" stroke-width="1.5" fill="none"/>
+                <rect x="930" y="560" width="30" height="30" rx="2" fill="rgba(96,165,250,0.06)"/>
+                <line x1="920" y1="565" x2="910" y2="565" stroke="rgba(96,165,250,0.12)" stroke-width="1.5"/>
+                <line x1="920" y1="575" x2="910" y2="575" stroke="rgba(96,165,250,0.12)" stroke-width="1.5"/>
+                <line x1="920" y1="585" x2="910" y2="585" stroke="rgba(96,165,250,0.12)" stroke-width="1.5"/>
+                <line x1="970" y1="565" x2="980" y2="565" stroke="rgba(96,165,250,0.12)" stroke-width="1.5"/>
+                <line x1="970" y1="575" x2="980" y2="575" stroke="rgba(96,165,250,0.12)" stroke-width="1.5"/>
+                <!-- Capacitor symbols -->
+                <line x1="440" y1="390" x2="440" y2="410" stroke="rgba(96,165,250,0.15)" stroke-width="2"/>
+                <line x1="448" y1="390" x2="448" y2="410" stroke="rgba(96,165,250,0.15)" stroke-width="2"/>
+                <line x1="430" y1="400" x2="440" y2="400" stroke="rgba(96,165,250,0.15)" stroke-width="1.5"/>
+                <line x1="448" y1="400" x2="458" y2="400" stroke="rgba(96,165,250,0.15)" stroke-width="1.5"/>
+                <!-- Resistor symbols -->
+                <path d="M820 195 L825 185 L830 205 L835 185 L840 205 L845 185 L850 195" stroke="rgba(96,165,250,0.13)" stroke-width="1.5" fill="none"/>
+                <line x1="810" y1="195" x2="820" y2="195" stroke="rgba(96,165,250,0.13)" stroke-width="1.5"/>
+                <line x1="850" y1="195" x2="860" y2="195" stroke="rgba(96,165,250,0.13)" stroke-width="1.5"/>
+                <!-- Additional diagonal traces -->
+                <path d="M600 0 L580 50 V150 L560 170 V250" stroke="rgba(96,165,250,0.08)" stroke-width="1.5"/>
+                <path d="M400 700 L420 650 V600" stroke="rgba(96,165,250,0.08)" stroke-width="1.5"/>
+            </svg>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Senior Hardware Engineer &middot; Motor Control &amp; Inverter Design</p>
+                <h1 class="hero-title">Mahmoud <span class="hero-title-accent">El-sharkawy</span></h1>
+                <p class="hero-description">
+                    Motor control and inverter design specialist leading hardware from concept to mass production at ELARABY Group. 7+ years delivering production-ready PCB designs, power electronics, and industrial control systems. Experienced in schematic capture, component selection, and manufacturing handoff.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="assets/Mahmoud_Gamal_CV.pdf" target="_blank" class="btn btn-outline">Open CV <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="80" height="80"><circle cx="12" cy="8" r="4"/><path d="M5 20c0-4 3-7 7-7s7 3 7 7"/></svg>
+                </div>
+                <div class="hero-tool-badge">Altium &middot; LTspice &middot; MATLAB</div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-divider"></div>
+            <div class="about-content">
+                <div class="about-image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="200" height="200"><circle cx="12" cy="8" r="4"/><path d="M5 20c0-4 3-7 7-7s7 3 7 7"/></svg>
+                </div>
+                <div class="about-text">
+                    <h3>Motor Control &amp; Inverter Design, From Prototype to Production</h3>
+                    <p>I'm a Senior Hardware Engineer at ELARABY Group with over 7 years of experience in electrical engineering. My journey began with electronic engineering studies at Menoufia University, evolving to encompass motor control design, inverter development, and PCB prototyping through to mass production.</p>
+                    <p>I thrive at the intersection of design and manufacturing, creating hardware solutions that are not just functional, but production-ready and reliable. From schematic capture and component selection through to manufacturing handoff, I deliver meticulous, high-quality results across home appliances, power electronics, and industrial control systems.</p>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="about-stat">
+                    <span class="about-stat-number" data-count="10">0</span><span class="about-stat-plus">+</span>
+                    <span class="about-stat-label">Years in HW R&amp;D</span>
+                </div>
+                <div class="about-stat">
+                    <span class="about-stat-number" data-count="50">0</span><span class="about-stat-plus">+</span>
+                    <span class="about-stat-label">Projects Completed</span>
+                </div>
+                <div class="about-stat">
+                    <span class="about-stat-number" data-count="10">0</span><span class="about-stat-plus">+</span>
+                    <span class="about-stat-label">Certifications</span>
+                </div>
+                <div class="about-stat">
+                    <span class="about-stat-number" data-count="2">0</span>
+                    <span class="about-stat-label">Languages Spoken</span>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Delivering production-ready hardware from concept and schematic capture all the way to mass-production sign-off.</p>
+            <div class="section-divider"></div>
+ 
+            <div class="timeline">
+                <!-- Position 1 -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">01/2024 &ndash; Present</span>
+                        <h3>R&amp;D Motor Control &amp; Inverter SR Hardware Design</h3>
+                        <p class="timeline-company">ELARABY Group of Companies &amp; Factories</p>
+                        <ul>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Responsible for new inverter development design projects from PCB prototyping to mass production</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Develop PCB Features Document and schematic/layout</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Assist in identifying and resolving technical issues</li>
+                        </ul>
+                    </div>
+                </div>
+ 
+                <!-- Position 2 -->
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">09/2020 &ndash; 12/2023</span>
+                        <h3>R&amp;D Hardware Design Engineer</h3>
+                        <p class="timeline-company">ELARABY Group of Companies &amp; Factories</p>
+                        <ul>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Develop circuit diagram and PCB for home appliance products</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Develop PCB Features Document and schematic/layout</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Assist in identifying and resolving technical issues</li>
+                        </ul>
+                    </div>
+                </div>
+ 
+                <!-- Position 3 -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">09/2023 &ndash; Present</span>
+                        <h3>Part Time Hardware Instructor</h3>
+                        <p class="timeline-company">AMIT Learning</p>
+                        <ul>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Develop circuit diagram and PCB for sports equipment</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Assist in identifying and resolving technical issues</li>
+                        </ul>
+                    </div>
+                </div>
+ 
+                <!-- Position 4 -->
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">04/2019 &ndash; 09/2020</span>
+                        <h3>Electrical Maintenance Engineer</h3>
+                        <p class="timeline-company">Modern Concrete</p>
+                        <ul>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Maintenance and technical support for electrical equipment</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Specialized in concrete industry electrical systems</li>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Worked with Elematic Electrical Engineer Expert in PLC design</li>
+                        </ul>
+                    </div>
+                </div>
+ 
+                <!-- Position 5 -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">11/2016 &ndash; 04/2019</span>
+                        <h3>Reserved Officer</h3>
+                        <p class="timeline-company">Military Service</p>
+                        <ul>
+                            <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Completed military service as Reserved Officer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Selected hardware projects across inverter design, PCB development, and embedded systems.</p>
+            <div class="section-divider"></div>
+ 
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-card-header" style="background: linear-gradient(135deg, #2563eb, #1e40af);">
+                        <span class="project-company">ELARABY Group</span>
+                        <h3>Motor Control Inverter Development</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>New inverter development design from PCB prototyping to mass production, including schematic design, layout, and PCB Features Document creation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Altium</span>
+                            <span class="tag">Motor Control</span>
+                            <span class="tag">Inverter</span>
+                            <span class="tag">Mass Production</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-card-header" style="background: linear-gradient(135deg, #1e40af, #3730a3);">
+                        <span class="project-company">ELARABY Group</span>
+                        <h3>Home Appliance Circuit &amp; PCB Design</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>Circuit diagram development and PCB design for home appliance products, covering full lifecycle from schematic capture to manufacturing handoff.</p>
+                        <div class="project-tags">
+                            <span class="tag">Altium</span>
+                            <span class="tag">PCB Layout</span>
+                            <span class="tag">Schematic</span>
+                            <span class="tag">DFM</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-card-header" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
+                        <span class="project-company">Graduation Project</span>
+                        <h3>Medical Electronic Drug Infusion Therapy</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>MediT &mdash; a medical electronic drug infusion therapy system for cancer treatment. Achieved Excellent grade. Designed hardware and control electronics.</p>
+                        <div class="project-tags">
+                            <span class="tag">Embedded C</span>
+                            <span class="tag">PCB Design</span>
+                            <span class="tag">Medical</span>
+                            <span class="tag">Control Systems</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-card-header" style="background: linear-gradient(135deg, #2563eb, #1e40af);">
+                        <span class="project-company">ROHM Company Training</span>
+                        <h3>DC-DC Converter &amp; Power Circuit Design</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>Power circuit design training with ROHM Company, including DC-DC converter design, linear circuit analysis, and power electronics fundamentals.</p>
+                        <div class="project-tags">
+                            <span class="tag">LTspice</span>
+                            <span class="tag">Power Electronics</span>
+                            <span class="tag">DC-DC</span>
+                            <span class="tag">ROHM</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-card-header" style="background: linear-gradient(135deg, #1e40af, #3730a3);">
+                        <span class="project-company">AMIT Learning</span>
+                        <h3>Sports Equipment PCB &amp; Circuit Design</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>Circuit diagram and PCB development for sports equipment as part of hardware instruction, mentoring students through design and troubleshooting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Altium</span>
+                            <span class="tag">PCB Design</span>
+                            <span class="tag">Instruction</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-card-header" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
+                        <span class="project-company">Modern Concrete</span>
+                        <h3>Industrial PLC &amp; SCADA Systems</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>PLC design and SCADA systems for industrial automation, working with Elematic electrical systems in the concrete manufacturing industry.</p>
+                        <div class="project-tags">
+                            <span class="tag">PLC</span>
+                            <span class="tag">SCADA</span>
+                            <span class="tag">Industrial</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-subtitle">Core competencies across PCB design, power electronics, simulation, and industrial control.</p>
+            <div class="section-divider"></div>
+ 
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="32" height="32"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        <h3>PCB &amp; CAD Design</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <span class="skill-label">Proficiency</span>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="95"></div></div>
+                    <ul class="skill-list">
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Altium Designer (Advanced &amp; Essential)</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>AutoCAD &amp; SolidWorks</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>FreeCAD &amp; 3D Modeling</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>DFM &amp; Manufacturing Handoff</li>
+                    </ul>
+                </div>
+ 
+                <!-- Skill 2 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="32" height="32"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        <h3>Power Electronics</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <span class="skill-label">Proficiency</span>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="92"></div></div>
+                    <ul class="skill-list">
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Motor Control Inverters</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>DC-DC Converters</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Linear Circuit Analysis</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>AC Motor Drives</li>
+                    </ul>
+                </div>
+ 
+                <!-- Skill 3 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="32" height="32"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 4-6"/></svg>
+                        <h3>Simulation &amp; Analysis</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <span class="skill-label">Proficiency</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+                    <ul class="skill-list">
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>LTspice &amp; Proteus</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>MATLAB / Simulink</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>LabVIEW &amp; Data Acquisition</li>
+                    </ul>
+                </div>
+ 
+                <!-- Skill 4 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="32" height="32"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <span class="skill-label">Proficiency</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+                    <ul class="skill-list">
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Embedded C</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>MATLAB Scripting</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Control Algorithm Prototyping</li>
+                    </ul>
+                </div>
+ 
+                <!-- Skill 5 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="32" height="32"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M14 12h4"/></svg>
+                        <h3>Industrial Control</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <span class="skill-label">Proficiency</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+                    <ul class="skill-list">
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>PLC Programming</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>SCADA Systems</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Manufacturing Automation</li>
+                    </ul>
+                </div>
+ 
+                <!-- Skill 6 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="32" height="32"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94L6.73 20.18a2 2 0 0 1-2.83 0l-.08-.08a2 2 0 0 1 0-2.83l6.7-6.7A6 6 0 0 1 18.48 2.83"/></svg>
+                        <h3>Testing &amp; Troubleshooting</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <span class="skill-label">Proficiency</span>
+                        <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-bar-fill" data-width="88"></div></div>
+                    <ul class="skill-list">
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Oscilloscope &amp; Multimeter</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Power Analyzer</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Systematic Troubleshooting</li>
+                    </ul>
+                </div>
+            </div>
+ 
+            <!-- Engineering Process -->
+            <div class="engineering-process">
+                <h3>Engineering Process</h3>
+                <p>My design methodology takes a product from requirements to production-ready hardware:</p>
+                <ol class="process-list">
+                    <li><span class="process-number">1</span>Requirements analysis &amp; topology selection</li>
+                    <li><span class="process-number">2</span>Schematic capture &amp; component selection</li>
+                    <li><span class="process-number">3</span>PCB layout (multi-layer, EMI, thermal)</li>
+                    <li><span class="process-number">4</span>Prototyping, bring-up &amp; lab testing</li>
+                    <li><span class="process-number">5</span>Design validation &amp; compliance</li>
+                    <li><span class="process-number">6</span>Manufacturing handoff &amp; mass production</li>
+                </ol>
+            </div>
+ 
+            <!-- Tools -->
+            <div class="tools-section">
+                <h4>Tools &amp; Software</h4>
+                <div class="tools-grid">
+                    <div class="tool-item"><svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="20" height="20"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Altium</div>
+                    <div class="tool-item"><svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="20" height="20"><path d="M2 9l10-7 10 7v11a2 2 0 01-2 2H4a2 2 0 01-2-2V9z"/></svg>AutoCAD</div>
+                    <div class="tool-item"><svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="20" height="20"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 4-6"/></svg>LTspice</div>
+                    <div class="tool-item"><svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="20" height="20"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Proteus</div>
+                    <div class="tool-item"><svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="20" height="20"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>MATLAB</div>
+                    <div class="tool-item"><svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="20" height="20"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6M9 13h6M9 17h4"/></svg>LabVIEW</div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education &amp; Development</h2>
+            <div class="section-divider"></div>
+ 
+            <div class="education-grid">
+                <!-- Degree -->
+                <div class="education-card">
+                    <div class="education-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="32" height="32"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
+                    </div>
+                    <span class="education-badge">2016 &middot; Distinction with Honor</span>
+                    <h3>B.Sc. in Electronic Engineering</h3>
+                    <p class="education-school">Menoufia University &mdash; Egypt</p>
+                    <p class="education-detail">Major: Industrial Electronic &amp; Control Engineering. Graduated with Distinction with Honor (ranked 6th in class).</p>
+                </div>
+ 
+                <!-- Certifications -->
+                <div class="education-card">
+                    <h3>Professional Development</h3>
+                    <ul class="cert-list">
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Altium Designer Advanced &amp; Essential — Altium</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Power Circuit Design — ROHM</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>MATLAB &amp; Simulink — MathWorks</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>LabVIEW &amp; Data Acquisition — NI</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>PLC Programming — Various</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>AutoCAD &amp; SolidWorks — Autodesk</li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>FreeCAD for Mechanical Design</li>
+                    </ul>
+                </div>
+ 
+                <!-- Languages -->
+                <div class="education-card">
+                    <div class="education-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="32" height="32"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a16.5 16.5 0 014 10 16.5 16.5 0 01-4 10 16.5 16.5 0 01-4-10A16.5 16.5 0 0112 2z"/></svg>
+                    </div>
+                    <h3>Languages</h3>
+                    <ul class="lang-list">
+                        <li><span class="lang-name">Arabic</span><span class="lang-level">Mother Tongue</span></li>
+                        <li><span class="lang-name">English</span><span class="lang-level">Very Good</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Build Something Great</h2>
+            <p class="section-subtitle">Open to hardware design, motor control, and power electronics opportunities &mdash; full-time or consulting.</p>
+            <div class="section-divider"></div>
+ 
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="24" height="24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:mahmoud_8383@rocketmail.com">mahmoud_8383@rocketmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="24" height="24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+201118044828">+20 111 804 4828</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="24" height="24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="#">linkedin.com/in/mahmoud-gamal</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="24" height="24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/mhmwd83">github.com/mhmwd83</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" width="24" height="24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Menoufia, El Shohada, Egypt</p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">Mahmoud El-sharkawy</a>
+                    <p>Motor Control &middot; Inverter Design &middot; PCB Development</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                    <a href="mailto:mahmoud_8383@rocketmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+                    <a href="https://github.com/mhmwd83" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mahmoud Gamal El-sharkawy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+ 
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+ 
+    <script src="js/main.js"></script>
+</body>
+</html>
