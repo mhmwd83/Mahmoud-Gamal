@@ -278,6 +278,8 @@ img {
     transition: all var(--transition);
     border: none;
     font-family: inherit;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
  
 .btn-primary {
