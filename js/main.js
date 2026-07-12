@@ -170,6 +170,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
  
+    // Force PDF download for the CV download link
+    var cvDownloadLink = document.getElementById('download-cv-link');
+    if (cvDownloadLink) {
+        cvDownloadLink.addEventListener('click', async function (event) {
+            var url = cvDownloadLink.href;
+            var filename = cvDownloadLink.getAttribute('download') || 'Mahmoud_Gamal_CV.pdf';
+            if (!url || !filename.toLowerCase().endsWith('.pdf')) {
+                return;
+            }
+ 
+            event.preventDefault();
+            event.stopPropagation();
+            try {
+                var response = await fetch(url);
+                if (!response.ok) {
+                    window.location.href = url;
+                    return;
+                }
+ 
+                var blob = await response.blob();
+                var objectUrl = URL.createObjectURL(new Blob([blob], { type: 'application/pdf' }));
+                var tempLink = document.createElement('a');
+                tempLink.href = objectUrl;
+                tempLink.download = filename;
+                document.body.appendChild(tempLink);
+                tempLink.click();
+                document.body.removeChild(tempLink);
+                URL.revokeObjectURL(objectUrl);
+            } catch (error) {
+                console.error('PDF download fallback failed:', error);
+                window.location.href = url;
+            }
+        });
+    }
+ 
     // Track mobile menu nav link clicks
     navLinkItems.forEach(function (link) {
         link.addEventListener('click', function () {
