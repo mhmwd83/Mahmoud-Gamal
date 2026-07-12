@@ -95,23 +95,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const name = contactForm.querySelector('input[type="text"]').value;
-            const email = contactForm.querySelector('input[type="email"]').value;
-            const message = contactForm.querySelector('textarea').value;
+            const name = contactForm.querySelector('input[type="text"]').value.trim();
+            const email = contactForm.querySelector('input[type="email"]').value.trim();
+            const message = contactForm.querySelector('textarea').value.trim();
  
             if (name && email && message) {
-                const btn = contactForm.querySelector('button');
-                const originalText = btn.innerHTML;
-                btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Message Sent!';
-                btn.style.background = '#22c55e';
-                btn.disabled = true;
+                const mailbox = 'mahmoud_8383@rocketmail.com';
+                const subject = encodeURIComponent('Portfolio contact from ' + name);
+                const body = encodeURIComponent(
+                    'Name: ' + name + '\n' +
+                    'Email: ' + email + '\n\n' +
+                    message
+                );
+                const mailtoUrl = 'mailto:' + mailbox + '?subject=' + subject + '&body=' + body;
  
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.style.background = '';
-                    btn.disabled = false;
-                    contactForm.reset();
-                }, 3000);
+                window.location.href = mailtoUrl;
             }
         });
     }
