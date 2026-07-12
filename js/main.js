@@ -161,11 +161,18 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('portfolio_analytics', JSON.stringify(log));
     }
  
-    // Track CV button clicks (hero Open CV + navbar Download CV)
+    // Track CV button clicks (hero Open CV + navbar Download/Open CV)
     var cvButtons = document.querySelectorAll('a[href*="Mahmoud_Gamal_CV"]');
     cvButtons.forEach(function (btn) {
         btn.addEventListener('click', function () {
-            var label = btn.classList.contains('nav-cv-btn') ? 'download_cv_navbar' : 'open_cv_hero';
+            var label;
+            if (btn.id === 'download-cv-link') {
+                label = 'download_cv_navbar';
+            } else if (btn.id === 'open-cv-link') {
+                label = 'open_cv_navbar';
+            } else {
+                label = 'open_cv_hero';
+            }
             trackEvent('CV', 'click', label);
         });
     });
