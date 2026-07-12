@@ -248,6 +248,7 @@ img {
     line-height: 1.1;
     color: var(--white);
     margin-bottom: 20px;
+    white-space: nowrap;
 }
  
 .hero-title-accent {
@@ -809,6 +810,29 @@ img {
     font-size: 0.88rem;
     color: var(--gray-400);
     padding: 4px 0;
+}
+
+.toast-message {
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%) translateY(20px);
+    padding: 14px 22px;
+    background: rgba(15, 23, 42, 0.98);
+    color: var(--white);
+    border-radius: 999px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 2000;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+}
+
+.toast-message.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
  
 /* Engineering Process */
