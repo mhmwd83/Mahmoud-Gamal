@@ -165,11 +165,12 @@ document.addEventListener('DOMContentLoaded', () => {
     var cvButtons = document.querySelectorAll('a[href*="Mahmoud_Gamal_CV"]');
     cvButtons.forEach(function (btn) {
         btn.addEventListener('click', function () {
+            var isMobileNav = window.innerWidth <= 768;
             var label;
             if (btn.id === 'download-cv-link') {
-                label = 'download_cv_navbar';
+                label = isMobileNav ? 'download_cv_navbar_mobile' : 'download_cv_navbar_desktop';
             } else if (btn.id === 'open-cv-link') {
-                label = 'open_cv_navbar';
+                label = isMobileNav ? 'open_cv_navbar_mobile' : 'open_cv_navbar_desktop';
             } else {
                 label = 'open_cv_hero';
             }
