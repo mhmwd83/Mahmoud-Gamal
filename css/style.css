@@ -249,6 +249,7 @@ img {
     color: var(--white);
     margin-bottom: 20px;
     white-space: nowrap;
+    display: inline-block;
 }
  
 .hero-title-accent {
