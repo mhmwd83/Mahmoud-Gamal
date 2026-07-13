@@ -92,6 +92,19 @@ document.addEventListener('DOMContentLoaded', () => {
  
     // Contact form handling
     const contactForm = document.getElementById('contact-form');
+
+    function showSuccessToast(message) {
+        const toast = document.createElement('div');
+        toast.className = 'toast-message';
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        window.requestAnimationFrame(() => toast.classList.add('visible'));
+        setTimeout(() => {
+            toast.classList.remove('visible');
+            toast.addEventListener('transitionend', () => toast.remove(), { once: true });
+        }, 2500);
+    }
+
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -109,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 );
                 const mailtoUrl = 'mailto:' + mailbox + '?subject=' + subject + '&body=' + body;
  
+                showSuccessToast('Message Sent Successfully');
                 window.location.href = mailtoUrl;
             }
         });
