@@ -266,7 +266,13 @@ img {
 .hero-cta {
     display: flex;
     gap: 16px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-cta .btn {
+    flex: 0 0 auto;
 }
 
 .hero-quick-links {
